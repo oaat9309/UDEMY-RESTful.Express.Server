@@ -45,6 +45,10 @@ let comments = [
 
 // Routing Part
 
+app.get('/', (req, res) => {
+    res.render('comments/home')
+})
+
 // render existing comment(above)
 app.get('/comments', (req, res) => {
     res.render('comments/index', { comments })
